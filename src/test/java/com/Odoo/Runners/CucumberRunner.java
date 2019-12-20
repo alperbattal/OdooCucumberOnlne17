@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/features", //path to features
         glue = "com/Odoo/StepDefinitions",//path to step definitions
-        //dryRun = false,
+        dryRun = false,
         tags = "",
         plugin = {"html:target/default-cucumber-reports",
                 "json:target/cucumber.json"

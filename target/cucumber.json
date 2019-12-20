@@ -1,0 +1,503 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3169208491,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on the login page",
+            "match": {
+              "location": "loginStepDefinitions.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 303807893,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user can click on login button",
+            "match": {
+              "location": "loginStepDefinitions.user_can_click_on_login_button()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-12-20T14:49:23.568Z",
+        "before": [
+          {
+            "result": {
+              "duration": 475721,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.setup()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "User is able to login with valid credentials",
+        "description": "",
+        "id": "login;user-is-able-to-login-with-valid-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 95750032,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1796856378,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User can login with username \"salesmanager60@info.com\" and password \"salesmanager\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"salesmanager60@info.com\"",
+                  "offset": 29
+                },
+                {
+                  "val": "\"salesmanager\"",
+                  "offset": 68
+                }
+              ],
+              "location": "loginStepDefinitions.user_can_login_with_username_and_password(String,String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2140451335,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on the login page",
+            "match": {
+              "location": "loginStepDefinitions.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 318850845,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user can click on login button",
+            "match": {
+              "location": "loginStepDefinitions.user_can_click_on_login_button()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-12-20T14:49:28.963Z",
+        "before": [
+          {
+            "result": {
+              "duration": 44921,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.setup()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "User is not able to login with invalid username",
+        "description": "",
+        "id": "login;user-is-not-able-to-login-with-invalid-username",
+        "after": [
+          {
+            "result": {
+              "duration": 80391475,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 830455051,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User enter username \"salesmanager60@info.com\" and password \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"salesmanager60@info.com\"",
+                  "offset": 20
+                },
+                {
+                  "val": "\"password\"",
+                  "offset": 59
+                }
+              ],
+              "location": "loginStepDefinitions.user_enter_username_and_password(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 30545171,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User verifies that \"Wrong login/password\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Wrong login/password\"",
+                  "offset": 19
+                }
+              ],
+              "location": "loginStepDefinitions.user_verifies_that_is_displayed(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2019767061,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on the login page",
+            "match": {
+              "location": "loginStepDefinitions.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 310649954,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user can click on login button",
+            "match": {
+              "location": "loginStepDefinitions.user_can_click_on_login_button()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-12-20T14:49:32.366Z",
+        "before": [
+          {
+            "result": {
+              "duration": 41298,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.setup()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "User is not able to login with invalid password",
+        "description": "",
+        "id": "login;user-is-not-able-to-login-with-invalid-password",
+        "after": [
+          {
+            "result": {
+              "duration": 80510710,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 794697461,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User enter username \"salesmanager\" and password \"salesmanager\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"salesmanager\"",
+                  "offset": 20
+                },
+                {
+                  "val": "\"salesmanager\"",
+                  "offset": 48
+                }
+              ],
+              "location": "loginStepDefinitions.user_enter_username_and_password(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 26874434,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User verifies that \"Wrong login/password\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Wrong login/password\"",
+                  "offset": 19
+                }
+              ],
+              "location": "loginStepDefinitions.user_verifies_that_is_displayed(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2033407897,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on the login page",
+            "match": {
+              "location": "loginStepDefinitions.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 303423356,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user can click on login button",
+            "match": {
+              "location": "loginStepDefinitions.user_can_click_on_login_button()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-12-20T14:49:35.602Z",
+        "before": [
+          {
+            "result": {
+              "duration": 37914,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.setup()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "user is able to reset password",
+        "description": "",
+        "id": "login;user-is-able-to-reset-password",
+        "after": [
+          {
+            "result": {
+              "duration": 81310606,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 422415419,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User can reset the password by clicking the reset button",
+            "match": {
+              "location": "loginStepDefinitions.user_can_reset_the_password_by_clicking_the_reset_button()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2022371654,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on the login page",
+            "match": {
+              "location": "loginStepDefinitions.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 338288550,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user can click on login button",
+            "match": {
+              "location": "loginStepDefinitions.user_can_click_on_login_button()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-12-20T14:49:38.444Z",
+        "before": [
+          {
+            "result": {
+              "duration": 47461,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.setup()"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "user is able to create a new account",
+        "description": "",
+        "id": "login;user-is-able-to-create-a-new-account",
+        "after": [
+          {
+            "result": {
+              "duration": 76057641,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 346773954,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "User can click on no account button to create a new account",
+            "match": {
+              "location": "loginStepDefinitions.user_can_click_on_no_account_button_to_create_a_new_account()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/login.feature",
+    "tags": [
+      {
+        "name": "@login",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
