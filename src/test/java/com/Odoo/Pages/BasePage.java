@@ -35,5 +35,4 @@ public class BasePage {
         return title.getText();
     }
 
-
 }
