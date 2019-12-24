@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3169208491,
+              "duration": 2801485040,
               "status": "passed"
             },
             "line": 5,
@@ -23,7 +23,7 @@
           },
           {
             "result": {
-              "duration": 303807893,
+              "duration": 287768552,
               "status": "passed"
             },
             "line": 6,
@@ -32,46 +32,13 @@
               "location": "loginStepDefinitions.user_can_click_on_login_button()"
             },
             "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2019-12-20T14:49:23.568Z",
-        "before": [
+          },
           {
             "result": {
-              "duration": 475721,
+              "duration": 1610536925,
               "status": "passed"
             },
-            "match": {
-              "location": "Hook.setup()"
-            }
-          }
-        ],
-        "line": 8,
-        "name": "User is able to login with valid credentials",
-        "description": "",
-        "id": "login;user-is-able-to-login-with-valid-credentials",
-        "after": [
-          {
-            "result": {
-              "duration": 95750032,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hook.tearDown()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 1796856378,
-              "status": "passed"
-            },
-            "line": 9,
+            "line": 7,
             "name": "User can login with username \"salesmanager60@info.com\" and password \"salesmanager\"",
             "match": {
               "arguments": [
@@ -88,52 +55,14 @@
             },
             "keyword": "Then "
           }
-        ],
-        "tags": [
-          {
-            "name": "@login"
-          }
         ]
       },
       {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 2140451335,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user is on the login page",
-            "match": {
-              "location": "loginStepDefinitions.user_is_on_the_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 318850845,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user can click on login button",
-            "match": {
-              "location": "loginStepDefinitions.user_can_click_on_login_button()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2019-12-20T14:49:28.963Z",
+        "start_timestamp": "2019-12-24T15:09:33.194Z",
         "before": [
           {
             "result": {
-              "duration": 44921,
+              "duration": 502960,
               "status": "passed"
             },
             "match": {
@@ -141,14 +70,14 @@
             }
           }
         ],
-        "line": 11,
-        "name": "User is not able to login with invalid username",
+        "line": 10,
+        "name": "user is able to verify title on page",
         "description": "",
-        "id": "login;user-is-not-able-to-login-with-invalid-username",
+        "id": "title-verification;user-is-able-to-verify-title-on-page",
         "after": [
           {
             "result": {
-              "duration": 80391475,
+              "duration": 102768496,
               "status": "passed"
             },
             "match": {
@@ -161,337 +90,272 @@
         "steps": [
           {
             "result": {
-              "duration": 830455051,
+              "duration": 663265216,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user is on \"Contacts\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Contacts\"",
+                  "offset": 11
+                }
+              ],
+              "location": "titleStepDefinitions.user_is_on(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6993643295,
               "status": "passed"
             },
             "line": 12,
-            "name": "User enter username \"salesmanager60@info.com\" and password \"password\"",
+            "name": "user verifies that the title is \"Contacts\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"salesmanager60@info.com\"",
-                  "offset": 20
-                },
-                {
-                  "val": "\"password\"",
-                  "offset": 59
+                  "val": "\"Contacts\"",
+                  "offset": 32
                 }
               ],
-              "location": "loginStepDefinitions.user_enter_username_and_password(String,String)"
+              "location": "titleStepDefinitions.user_verifies_that_the_title_is(String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 30545171,
+              "duration": 214945887,
               "status": "passed"
             },
             "line": 13,
-            "name": "User verifies that \"Wrong login/password\" is displayed",
+            "name": "user is on \"Discuss\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Wrong login/password\"",
-                  "offset": 19
+                  "val": "\"Discuss\"",
+                  "offset": 11
                 }
               ],
-              "location": "loginStepDefinitions.user_verifies_that_is_displayed(String)"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@login"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 2019767061,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user is on the login page",
-            "match": {
-              "location": "loginStepDefinitions.user_is_on_the_login_page()"
+              "location": "titleStepDefinitions.user_is_on(String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 310649954,
+              "duration": 29841135,
               "status": "passed"
             },
-            "line": 6,
-            "name": "user can click on login button",
+            "line": 14,
+            "name": "user verifies that the title is \"#Inbox\"",
             "match": {
-              "location": "loginStepDefinitions.user_can_click_on_login_button()"
+              "arguments": [
+                {
+                  "val": "\"#Inbox\"",
+                  "offset": 32
+                }
+              ],
+              "location": "titleStepDefinitions.user_verifies_that_the_title_is(String)"
             },
             "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2019-12-20T14:49:32.366Z",
-        "before": [
+          },
           {
             "result": {
-              "duration": 41298,
+              "duration": 89028667,
               "status": "passed"
             },
+            "line": 15,
+            "name": "user is on \"Calendar\"",
             "match": {
-              "location": "Hook.setup()"
-            }
-          }
-        ],
-        "line": 15,
-        "name": "User is not able to login with invalid password",
-        "description": "",
-        "id": "login;user-is-not-able-to-login-with-invalid-password",
-        "after": [
-          {
-            "result": {
-              "duration": 80510710,
-              "status": "passed"
+              "arguments": [
+                {
+                  "val": "\"Calendar\"",
+                  "offset": 11
+                }
+              ],
+              "location": "titleStepDefinitions.user_is_on(String)"
             },
-            "match": {
-              "location": "Hook.tearDown()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
+            "keyword": "Given "
+          },
           {
             "result": {
-              "duration": 794697461,
+              "duration": 3188405101,
               "status": "passed"
             },
             "line": 16,
-            "name": "User enter username \"salesmanager\" and password \"salesmanager\"",
+            "name": "user verifies that the title is \"Meetings (Week 52)\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"salesmanager\"",
-                  "offset": 20
-                },
-                {
-                  "val": "\"salesmanager\"",
-                  "offset": 48
+                  "val": "\"Meetings (Week 52)\"",
+                  "offset": 32
                 }
               ],
-              "location": "loginStepDefinitions.user_enter_username_and_password(String,String)"
+              "location": "titleStepDefinitions.user_verifies_that_the_title_is(String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 26874434,
+              "duration": 93191203,
               "status": "passed"
             },
             "line": 17,
-            "name": "User verifies that \"Wrong login/password\" is displayed",
+            "name": "user is on \"Notes\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Wrong login/password\"",
-                  "offset": 19
+                  "val": "\"Notes\"",
+                  "offset": 11
                 }
               ],
-              "location": "loginStepDefinitions.user_verifies_that_is_displayed(String)"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@login"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 2033407897,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user is on the login page",
-            "match": {
-              "location": "loginStepDefinitions.user_is_on_the_login_page()"
+              "location": "titleStepDefinitions.user_is_on(String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 303423356,
+              "duration": 576752903,
               "status": "passed"
             },
-            "line": 6,
-            "name": "user can click on login button",
+            "line": 18,
+            "name": "user verifies that the title is \"Notes\"",
             "match": {
-              "location": "loginStepDefinitions.user_can_click_on_login_button()"
+              "arguments": [
+                {
+                  "val": "\"Notes\"",
+                  "offset": 32
+                }
+              ],
+              "location": "titleStepDefinitions.user_verifies_that_the_title_is(String)"
             },
             "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2019-12-20T14:49:35.602Z",
-        "before": [
+          },
           {
             "result": {
-              "duration": 37914,
+              "duration": 124931324,
               "status": "passed"
             },
+            "line": 19,
+            "name": "user is on \"CRM\"",
             "match": {
-              "location": "Hook.setup()"
-            }
-          }
-        ],
-        "line": 19,
-        "name": "user is able to reset password",
-        "description": "",
-        "id": "login;user-is-able-to-reset-password",
-        "after": [
-          {
-            "result": {
-              "duration": 81310606,
-              "status": "passed"
+              "arguments": [
+                {
+                  "val": "\"CRM\"",
+                  "offset": 11
+                }
+              ],
+              "location": "titleStepDefinitions.user_is_on(String)"
             },
-            "match": {
-              "location": "Hook.tearDown()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
+            "keyword": "Given "
+          },
           {
             "result": {
-              "duration": 422415419,
+              "duration": 1093552479,
               "status": "passed"
             },
             "line": 20,
-            "name": "User can reset the password by clicking the reset button",
+            "name": "user verifies that the title is \"Pipeline\"",
             "match": {
-              "location": "loginStepDefinitions.user_can_reset_the_password_by_clicking_the_reset_button()"
+              "arguments": [
+                {
+                  "val": "\"Pipeline\"",
+                  "offset": 32
+                }
+              ],
+              "location": "titleStepDefinitions.user_verifies_that_the_title_is(String)"
             },
             "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@login"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
+          },
           {
             "result": {
-              "duration": 2022371654,
+              "duration": 91452942,
               "status": "passed"
             },
-            "line": 5,
-            "name": "user is on the login page",
+            "line": 21,
+            "name": "user is on \"Sales\"",
             "match": {
-              "location": "loginStepDefinitions.user_is_on_the_login_page()"
+              "arguments": [
+                {
+                  "val": "\"Sales\"",
+                  "offset": 11
+                }
+              ],
+              "location": "titleStepDefinitions.user_is_on(String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 338288550,
+              "duration": 1086195424,
               "status": "passed"
             },
-            "line": 6,
-            "name": "user can click on login button",
+            "line": 22,
+            "name": "user verifies that the title is \"Quotations\"",
             "match": {
-              "location": "loginStepDefinitions.user_can_click_on_login_button()"
+              "arguments": [
+                {
+                  "val": "\"Quotations\"",
+                  "offset": 32
+                }
+              ],
+              "location": "titleStepDefinitions.user_verifies_that_the_title_is(String)"
             },
             "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2019-12-20T14:49:38.444Z",
-        "before": [
+          },
           {
             "result": {
-              "duration": 47461,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hook.setup()"
-            }
-          }
-        ],
-        "line": 22,
-        "name": "user is able to create a new account",
-        "description": "",
-        "id": "login;user-is-able-to-create-a-new-account",
-        "after": [
-          {
-            "result": {
-              "duration": 76057641,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hook.tearDown()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 346773954,
+              "duration": 105053991,
               "status": "passed"
             },
             "line": 23,
-            "name": "User can click on no account button to create a new account",
+            "name": "user is on \"Website\"",
             "match": {
-              "location": "loginStepDefinitions.user_can_click_on_no_account_button_to_create_a_new_account()"
+              "arguments": [
+                {
+                  "val": "\"Website\"",
+                  "offset": 11
+                }
+              ],
+              "location": "titleStepDefinitions.user_is_on(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1621719754,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "user verifies that the title is \"Dashboard\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Dashboard\"",
+                  "offset": 32
+                }
+              ],
+              "location": "titleStepDefinitions.user_verifies_that_the_title_is(String)"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@login"
+            "name": "@title_verification"
           }
         ]
       }
     ],
-    "name": "Login",
+    "name": "Title Verification",
     "description": "",
-    "id": "login",
+    "id": "title-verification",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/login.feature",
+    "uri": "file:src/test/resources/features/verifyTitle.feature",
     "tags": [
       {
-        "name": "@login",
+        "name": "@title_verification",
         "type": "Tag",
         "location": {
           "line": 1,

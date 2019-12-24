@@ -7,6 +7,7 @@ import io.cucumber.java.en.*;
 import org.junit.Assert;
 
 public class loginStepDefinitions {
+    //Login page step definitions.
     LoginPage loginPage = new LoginPage();
 
     @Given("user is on the login page")

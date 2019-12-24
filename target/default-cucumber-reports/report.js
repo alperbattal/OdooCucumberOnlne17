@@ -1,11 +1,11 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/login.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/verifyTitle.feature");
 formatter.feature({
-  "name": "Login",
+  "name": "Title Verification",
   "description": "",
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@login"
+      "name": "@title_verification"
     }
   ]
 });
@@ -36,16 +36,6 @@ formatter.match({
 });
 formatter.result({
   "status": "passed"
-});
-formatter.scenario({
-  "name": "User is able to login with valid credentials",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@login"
-    }
-  ]
 });
 formatter.step({
   "name": "User can login with username \"salesmanager60@info.com\" and password \"salesmanager\"",
@@ -57,226 +47,152 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
-formatter.after({
-  "status": "passed"
-});
-formatter.background({
-  "name": "",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user is on the login page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "loginStepDefinitions.user_is_on_the_login_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user can click on login button",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "loginStepDefinitions.user_can_click_on_login_button()"
-});
-formatter.result({
-  "status": "passed"
-});
 formatter.scenario({
-  "name": "User is not able to login with invalid username",
+  "name": "user is able to verify title on page",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@login"
+      "name": "@title_verification"
     }
   ]
 });
 formatter.step({
-  "name": "User enter username \"salesmanager60@info.com\" and password \"password\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "loginStepDefinitions.user_enter_username_and_password(String,String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User verifies that \"Wrong login/password\" is displayed",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "loginStepDefinitions.user_verifies_that_is_displayed(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.background({
-  "name": "",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user is on the login page",
+  "name": "user is on \"Contacts\"",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "loginStepDefinitions.user_is_on_the_login_page()"
+  "location": "titleStepDefinitions.user_is_on(String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user can click on login button",
+  "name": "user verifies that the title is \"Contacts\"",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "loginStepDefinitions.user_can_click_on_login_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "User is not able to login with invalid password",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@login"
-    }
-  ]
-});
-formatter.step({
-  "name": "User enter username \"salesmanager\" and password \"salesmanager\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "loginStepDefinitions.user_enter_username_and_password(String,String)"
+  "location": "titleStepDefinitions.user_verifies_that_the_title_is(String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User verifies that \"Wrong login/password\" is displayed",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "loginStepDefinitions.user_verifies_that_is_displayed(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.background({
-  "name": "",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user is on the login page",
+  "name": "user is on \"Discuss\"",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "loginStepDefinitions.user_is_on_the_login_page()"
+  "location": "titleStepDefinitions.user_is_on(String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user can click on login button",
+  "name": "user verifies that the title is \"#Inbox\"",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "loginStepDefinitions.user_can_click_on_login_button()"
+  "location": "titleStepDefinitions.user_verifies_that_the_title_is(String)"
 });
 formatter.result({
   "status": "passed"
 });
-formatter.scenario({
-  "name": "user is able to reset password",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@login"
-    }
-  ]
-});
 formatter.step({
-  "name": "User can reset the password by clicking the reset button",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "loginStepDefinitions.user_can_reset_the_password_by_clicking_the_reset_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.background({
-  "name": "",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user is on the login page",
+  "name": "user is on \"Calendar\"",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "loginStepDefinitions.user_is_on_the_login_page()"
+  "location": "titleStepDefinitions.user_is_on(String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user can click on login button",
+  "name": "user verifies that the title is \"Meetings (Week 52)\"",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "loginStepDefinitions.user_can_click_on_login_button()"
+  "location": "titleStepDefinitions.user_verifies_that_the_title_is(String)"
 });
 formatter.result({
   "status": "passed"
 });
-formatter.scenario({
-  "name": "user is able to create a new account",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@login"
-    }
-  ]
+formatter.step({
+  "name": "user is on \"Notes\"",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "titleStepDefinitions.user_is_on(String)"
+});
+formatter.result({
+  "status": "passed"
 });
 formatter.step({
-  "name": "User can click on no account button to create a new account",
+  "name": "user verifies that the title is \"Notes\"",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "loginStepDefinitions.user_can_click_on_no_account_button_to_create_a_new_account()"
+  "location": "titleStepDefinitions.user_verifies_that_the_title_is(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user is on \"CRM\"",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "titleStepDefinitions.user_is_on(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user verifies that the title is \"Pipeline\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "titleStepDefinitions.user_verifies_that_the_title_is(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user is on \"Sales\"",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "titleStepDefinitions.user_is_on(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user verifies that the title is \"Quotations\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "titleStepDefinitions.user_verifies_that_the_title_is(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user is on \"Website\"",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "titleStepDefinitions.user_is_on(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user verifies that the title is \"Dashboard\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "titleStepDefinitions.user_verifies_that_the_title_is(String)"
 });
 formatter.result({
   "status": "passed"
