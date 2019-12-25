@@ -4,6 +4,8 @@ import com.Odoo.Utitlities.BrowserUtils;
 import com.Odoo.Utitlities.Driver;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.*;
 import org.openqa.selenium.support.PageFactory;
@@ -35,5 +37,19 @@ public class BasePage {
         return title.getText();
     }
 
+    public boolean waitUntilLoaderMaskDisappear() {
+        WebDriverWait wait = new WebDriverWait(Driver.get(), 30);
+        try {
+            wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector("div[class='loader-mask shown']")));
+            return true;
+        } catch (NoSuchElementException e) {
+            System.out.println("Loader mask not found!");
+            e.printStackTrace();
+            return true; // no loader mask, all good, return true
+        } catch (WebDriverException e) {
+            e.printStackTrace();
+        }
+        return false;
+    }
 
 }

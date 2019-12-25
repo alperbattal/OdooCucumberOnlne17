@@ -1,16 +1,16 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/verifyTitle.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/Sales.feature");
 formatter.feature({
-  "name": "Title Verification",
+  "name": "Sales",
   "description": "",
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@title_verification"
+      "name": "@Sales"
     }
   ]
 });
 formatter.background({
-  "name": "",
+  "name": "open login page and login as sales manager",
   "description": "",
   "keyword": "Background"
 });
@@ -48,151 +48,63 @@ formatter.result({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "user is able to verify title on page",
+  "name": "Verify column names",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@title_verification"
+      "name": "@Sales"
     }
   ]
 });
 formatter.step({
-  "name": "user is on \"Contacts\"",
+  "name": "user navigates to \"Sales\"",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "titleStepDefinitions.user_is_on(String)"
+  "location": "SalesDefinitions.user_navigates_to(String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user verifies that the title is \"Contacts\"",
-  "keyword": "Then "
+  "name": "user verifies that column names are displayed",
+  "rows": [
+    {
+      "cells": [
+        "Quotation Number"
+      ]
+    },
+    {
+      "cells": [
+        "Quotation Date"
+      ]
+    },
+    {
+      "cells": [
+        "Customer"
+      ]
+    },
+    {
+      "cells": [
+        "Salesperson"
+      ]
+    },
+    {
+      "cells": [
+        "Total"
+      ]
+    },
+    {
+      "cells": [
+        "Status"
+      ]
+    }
+  ],
+  "keyword": "And "
 });
 formatter.match({
-  "location": "titleStepDefinitions.user_verifies_that_the_title_is(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user is on \"Discuss\"",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "titleStepDefinitions.user_is_on(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user verifies that the title is \"#Inbox\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "titleStepDefinitions.user_verifies_that_the_title_is(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user is on \"Calendar\"",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "titleStepDefinitions.user_is_on(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user verifies that the title is \"Meetings (Week 52)\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "titleStepDefinitions.user_verifies_that_the_title_is(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user is on \"Notes\"",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "titleStepDefinitions.user_is_on(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user verifies that the title is \"Notes\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "titleStepDefinitions.user_verifies_that_the_title_is(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user is on \"CRM\"",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "titleStepDefinitions.user_is_on(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user verifies that the title is \"Pipeline\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "titleStepDefinitions.user_verifies_that_the_title_is(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user is on \"Sales\"",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "titleStepDefinitions.user_is_on(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user verifies that the title is \"Quotations\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "titleStepDefinitions.user_verifies_that_the_title_is(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user is on \"Website\"",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "titleStepDefinitions.user_is_on(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user verifies that the title is \"Dashboard\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "titleStepDefinitions.user_verifies_that_the_title_is(String)"
+  "location": "SalesDefinitions.user_verifies_that_column_names_are_displayed(String\u003e)"
 });
 formatter.result({
   "status": "passed"
