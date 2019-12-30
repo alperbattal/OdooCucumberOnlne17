@@ -3,12 +3,12 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2019-12-24T15:42:38.930Z",
+        "start_timestamp": "2019-12-25T15:35:38.233Z",
         "before": [
           {
             "result": {
-              "duration": 1590399,
-              "status": "skipped"
+              "duration": 1105100,
+              "status": "passed"
             },
             "match": {
               "location": "Hook.setup()"
@@ -22,8 +22,8 @@
         "after": [
           {
             "result": {
-              "duration": 47700,
-              "status": "skipped"
+              "duration": 1820095300,
+              "status": "passed"
             },
             "match": {
               "location": "Hook.tearDown()"
@@ -35,8 +35,8 @@
         "steps": [
           {
             "result": {
-              "duration": 4251999,
-              "status": "skipped"
+              "duration": 18069316500,
+              "status": "passed"
             },
             "line": 5,
             "name": "user is on the login page",
@@ -47,38 +47,62 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 2811600,
+              "status": "passed"
             },
             "line": 7,
             "name": "user logs in as username",
-            "match": {},
+            "match": {
+              "location": "NotesStepDefinition.user_logs_in_as_username()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 3285500,
+              "status": "passed"
             },
             "line": 9,
             "name": "user click on \"Notes\" title",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Notes\"",
+                  "offset": 14
+                }
+              ],
+              "location": "NotesStepDefinition.user_click_on_title(String)"
+            },
             "keyword": "Then "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 3230700,
+              "status": "passed"
             },
             "line": 11,
             "name": "user click on \"Create\" button",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Create\"",
+                  "offset": 14
+                }
+              ],
+              "location": "NotesStepDefinition.user_click_on_button(String)"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 2172800,
+              "status": "passed"
             },
             "line": 13,
             "name": "user create new note",
-            "match": {},
+            "match": {
+              "location": "NotesStepDefinition.user_create_new_note()"
+            },
             "keyword": "Then "
           }
         ],
