@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         glue = "com/Odoo/StepDefinitions",//path to step definitions
         dryRun = false,
 
-        tags = "@notes",
+        tags = "@create_a_leave",
         plugin = {"html:target/default-cucumber-reports",
                 "json:target/cucumber.json"
         }

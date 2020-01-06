@@ -8,7 +8,7 @@ public class Hook {
 
     @Before
     public void setup(){
-
+        Driver.get().manage().window().maximize();
     }
 
     @After
