@@ -38,6 +38,20 @@ public class BasePage {
         return title.getText();
     }
 
-      
+
+    public boolean waitUntilLoaderMaskDisappear() {
+        WebDriverWait wait = new WebDriverWait(Driver.get(), 30);
+        try {
+            wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//*[@class='o_web_client oe_wait']")));
+            return true;
+        } catch (NoSuchElementException e) {
+            System.out.println("Loader mask not found!");
+            e.printStackTrace();
+            return true; // no loader mask, all good, return true
+        } catch (WebDriverException e) {
+            e.printStackTrace();
+        }
+        return false;
+    }
 
 }
