@@ -88,6 +88,8 @@ public class BrowserUtils {
      * @param name of test or whatever your like
      * take a name of a test and returns a path to screenshot takes
      */
+
+
     public static String getScreenshot(String name) {
         // name the screenshot with the current date time to avoid duplicate name
 //        String date = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm"));​
