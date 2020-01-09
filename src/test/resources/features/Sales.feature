@@ -17,4 +17,3 @@ Feature: Sales
       | Salesperson      |
       | Total            |
       | Status           |
-
