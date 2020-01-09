@@ -7,7 +7,9 @@ import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 import java.util.function.Function;
 
 public class BrowserUtils {
@@ -86,6 +88,8 @@ public class BrowserUtils {
      * @param name of test or whatever your like
      * take a name of a test and returns a path to screenshot takes
      */
+
+
     public static String getScreenshot(String name) {
         // name the screenshot with the current date time to avoid duplicate name
 //        String date = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm"));​
@@ -151,5 +155,19 @@ public class BrowserUtils {
         } catch (Throwable error) {
             error.printStackTrace();
         }
+    }
+
+
+    public static List<String> getListOfString(List<WebElement> listOfWebElements) {
+        List<String> listOfStrings = new ArrayList<>();
+        for (WebElement element : listOfWebElements) {
+            String value = element.getText().trim();
+            //if there is no text
+            //do not add this blank text into list
+            if (value.length() > 0) {
+                listOfStrings.add(value);
+            }
+        }
+        return listOfStrings;
     }
 }

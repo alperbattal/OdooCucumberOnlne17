@@ -3,11 +3,74 @@
     "line": 2,
     "elements": [
       {
+<<<<<<< HEAD
+        "line": 4,
+        "name": "open login page and login as sales manager",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6108324200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on the login page",
+            "match": {
+              "location": "loginStepDefinitions.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 424124800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user can click on login button",
+            "match": {
+              "location": "loginStepDefinitions.user_can_click_on_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3360021900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User can login with username \"salesmanager60@info.com\" and password \"salesmanager\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"salesmanager60@info.com\"",
+                  "offset": 29
+                },
+                {
+                  "val": "\"salesmanager\"",
+                  "offset": 68
+                }
+              ],
+              "location": "loginStepDefinitions.user_can_login_with_username_and_password(String,String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-12-25T02:26:14.790Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1238500,
+=======
         "start_timestamp": "2019-12-25T15:35:38.233Z",
         "before": [
           {
             "result": {
               "duration": 1105100,
+>>>>>>> master
               "status": "passed"
             },
             "match": {
@@ -15,6 +78,16 @@
             }
           }
         ],
+<<<<<<< HEAD
+        "line": 10,
+        "name": "Verify column names",
+        "description": "",
+        "id": "sales;verify-column-names",
+        "after": [
+          {
+            "result": {
+              "duration": 670008200,
+=======
         "line": 3,
         "name": "Verify new note is created",
         "description": "",
@@ -23,6 +96,7 @@
           {
             "result": {
               "duration": 1820095300,
+>>>>>>> master
               "status": "passed"
             },
             "match": {
@@ -35,6 +109,21 @@
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
+              "duration": 1225509000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user navigates to \"Sales\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sales\"",
+                  "offset": 18
+                }
+              ],
+              "location": "SalesDefinitions.user_navigates_to(String)"
+=======
               "duration": 18069316500,
               "status": "passed"
             },
@@ -90,11 +179,55 @@
                 }
               ],
               "location": "NotesStepDefinition.user_click_on_button(String)"
+>>>>>>> master
             },
             "keyword": "And "
           },
           {
             "result": {
+<<<<<<< HEAD
+              "duration": 3180548800,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user verifies that column names are displayed",
+            "match": {
+              "location": "SalesDefinitions.user_verifies_that_column_names_are_displayed(String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Quotation Number"
+                ]
+              },
+              {
+                "cells": [
+                  "Quotation Date"
+                ]
+              },
+              {
+                "cells": [
+                  "Customer"
+                ]
+              },
+              {
+                "cells": [
+                  "Salesperson"
+                ]
+              },
+              {
+                "cells": [
+                  "Total"
+                ]
+              },
+              {
+                "cells": [
+                  "Status"
+                ]
+              }
+            ],
+            "keyword": "And "
+=======
               "duration": 2172800,
               "status": "passed"
             },
@@ -104,15 +237,30 @@
               "location": "NotesStepDefinition.user_create_new_note()"
             },
             "keyword": "Then "
+>>>>>>> master
           }
         ],
         "tags": [
           {
+<<<<<<< HEAD
+            "name": "@Sales"
+=======
             "name": "@notes"
+>>>>>>> master
           }
         ]
       }
     ],
+<<<<<<< HEAD
+    "name": "Sales",
+    "description": "",
+    "id": "sales",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Sales.feature",
+    "tags": [
+      {
+        "name": "@Sales",
+=======
     "name": "Create new note",
     "description": "",
     "id": "create-new-note",
@@ -121,6 +269,7 @@
     "tags": [
       {
         "name": "@notes",
+>>>>>>> master
         "type": "Tag",
         "location": {
           "line": 1,
