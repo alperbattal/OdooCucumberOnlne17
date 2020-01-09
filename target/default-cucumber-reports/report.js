@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/Sales.feature");
 formatter.feature({
   "name": "Sales",
@@ -113,3 +114,5 @@ formatter.after({
   "status": "passed"
 });
 });
+=======
+>>>>>>> master
